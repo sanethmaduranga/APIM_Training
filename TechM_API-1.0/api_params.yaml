@@ -1,0 +1,18 @@
+environments:
+  - name: dev 
+    endpoints: 
+      production: 
+        url: 'http://tech.test.dev.com' 
+      sandbox:
+        url: 'http://tech.test.dev.com' 
+  - name: prod
+    endpoints:
+      production:
+        url: 'http://tech.test.prod.com
+      sandbox:
+        url: 'http://tech.test.prod.sandbox.com'
+
+deploy:
+  import:
+    update: true
+    preserveProvider: true
