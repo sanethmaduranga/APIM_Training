@@ -1,0 +1,18 @@
+environments:
+  - name: dev 
+    endpoints: 
+      production: 
+        url: 'https://localhost:9443/am/sample/pizzashack/v1/api/' 
+      sandbox:
+        url: 'https://localhost:9443/am/sample/pizzashack/v1/api/' 
+  - name: prod
+    endpoints:
+      production:
+        url: 'http://prod.wso2.com'
+      sandbox:
+        url: 'http://prod.sandbox.wso2.com'
+
+deploy:
+  import:
+    update: true
+    preserveProvider: true
