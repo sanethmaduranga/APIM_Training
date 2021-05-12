@@ -10,7 +10,7 @@ environments:
       production:
         url: 'http://tech.test.prod.com'
       sandbox:
-        url: 'http://tech.test.prod.sandbox.com'
+        url: 'http://tech.test.prod.com'
 
 deploy:
   import:
