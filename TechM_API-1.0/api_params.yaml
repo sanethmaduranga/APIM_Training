@@ -8,7 +8,7 @@ environments:
   - name: prod
     endpoints:
       production:
-        url: 'http://tech.test.prod.com
+        url: 'http://tech.test.prod.com'
       sandbox:
         url: 'http://tech.test.prod.sandbox.com'
 
