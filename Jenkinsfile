@@ -41,5 +41,13 @@ pipeline {
                 """
             }
         }
+        stage('Deploy APIs To "Prod" Environment') {
+            steps {
+                sh """
+                apictl login prod -u admin -p admin
+                apictl vcs deploy -e prod
+                """
+            }
+        }
     }   
 }
